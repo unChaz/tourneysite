@@ -3,7 +3,7 @@
 <div class="content">
   <div clss="row content-row">
     <div class="col-md-8 stream-col">
-      <twitch-stream channel-name="'nathanias'" ng-if="$ctrl.live"></twitch-stream>
+      <twitch-stream channel-name="$ctrl.twitchChannel" ng-if="$ctrl.live"></twitch-stream>
       <countdown ng-if="$ctrl.live == false"
                  end-time="$ctrl.liveDate"
                  on-end="$ctrl.timesUp()">

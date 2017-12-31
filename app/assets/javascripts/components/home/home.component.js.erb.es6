@@ -7,6 +7,7 @@
     }
 
     $onInit() {
+      console.log(this.twitchChannel)
       this.logoImage = '<%= asset_path "ting-logo.png" %>';
       this.verticalBanner = '<%= asset_path "vertical-banner.png" %>';
       let now = new Date();
@@ -33,6 +34,7 @@
       controller: HomeCtrl,
       bindings: {
         liveDate: '<',
+        twitchChannel: '<',
         twitterWidgetId: '<',
         twitterhashtag: '<'
       }
