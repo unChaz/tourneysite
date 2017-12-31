@@ -3,29 +3,35 @@
 <div class="content">
   <div clss="row content-row">
     <div class="col-md-8 stream-col">
-      <twitch-stream channel-name="$ctrl.twitchChannel" ng-if="$ctrl.live"></twitch-stream>
-      <countdown ng-if="$ctrl.live == false"
+      <twitch-stream channel-name="$ctrl.twitchChannel" ng-if="$ctrl.live">
+      </twitch-stream>
+      <countdown ng-if="$ctrl.live === false"
                  start-time-string="$ctrl.startTimeString"
                  end-time="$ctrl.liveDate"
                  on-end="$ctrl.timesUp()">
       </countdown>
     </div>
     <div class="col-md-4 banner-col">
-      <img class="vertical-banner" ng-src="{{ $ctrl.verticalBanner }}"></img>
+      <twitch-chat ng-if="$ctrl.live" channel-name="$ctrl.twitchChannel">
+      </twitch-chat>
+      <img class="vertical-banner"
+           ng-if="$ctrl.live === false"
+           ng-src="{{ $ctrl.verticalBanner }}">
+      </img>
     </div>
   </div>
 
-  <div class="row">
-    <div class="col-md-6">
+  <div class="row content-row">
+    <div class="col-sm-6">
       <div class="info-card">
         <twitter-feed hashtag="$ctrl.twitterHashtag"
                       widget-id="$ctrl.twitterWidgetId">
         </twitter-feed>
       </div>
     </div>
-    <div class="col-md-6">
+    <div class="col-sm-6">
       <div class="info-card text-center">
-        <h1>Donate</h1>
+        <h1>About Ting</h1>
       </div>
     </div>
   </div>

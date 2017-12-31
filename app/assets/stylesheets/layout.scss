@@ -36,7 +36,7 @@ countdown {
 
   .countdown-text-container {
     padding-top: 260px;
-    font-size: 48px;
+    font-size: 36px;
 
     .start-date {
       font-size: 22px;
@@ -56,4 +56,8 @@ countdown {
   background-repeat: no-repeat;
   background-size: cover;
   border-top: 1px solid $dark-grey;
+}
+
+.content-row {
+  width: 100%;
 }
