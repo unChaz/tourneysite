@@ -1,5 +1,5 @@
 .banner-col {
-  text-align: center;
+  text-align: right;
 
   @media(max-width: 1023px) {
     display: none !important;
@@ -19,6 +19,7 @@
 .content {
   max-width: 1440px;
   margin: auto;
+  margin-bottom: 30px;
 }
 
 .separator {

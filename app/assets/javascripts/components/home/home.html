@@ -15,20 +15,18 @@
   </div>
 
   <div class="row">
-    <div class="col-md-12 separator"></div>
-  </div>
-
-  <div class="row content-row">
-    <div class="col-md-12 info-card-wrapper">
+    <div class="col-md-6">
       <div class="info-card">
-        This is an info card that might have links or images and useful things
+        <twitter-feed hashtag="$ctrl.twitterHashtag"
+                      widget-id="$ctrl.twitterWidgetId">
+        </twitter-feed>
       </div>
-      <div class="info-card">
-        This is an info card that might have links or images and useful things
-      </div>
-      <div class="info-card">
-        This is an info card that might have links or images and useful things
+    </div>
+    <div class="col-md-6">
+      <div class="info-card text-center">
+        <h1>Donate</h1>
       </div>
     </div>
   </div>
+
 </div>

@@ -32,7 +32,9 @@
       templateUrl: '<%= asset_path "components/home/home.html" %>',
       controller: HomeCtrl,
       bindings: {
-        liveDate: '<'
+        liveDate: '<',
+        twitterWidgetId: '<',
+        twitterhashtag: '<'
       }
     });
 })();

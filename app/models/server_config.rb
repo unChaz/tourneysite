@@ -2,11 +2,10 @@ class ServerConfig
   include Mongoid::Document
   field :site_title, type: String
   field :logo_image, type: String
-  field :primary_sponsor_image, type: String
   field :site_title, type: String
-  field :announce_date, type: DateTime
   field :live_date, type: DateTime
-  field :site_title, type: String
+  field :twitter_widget_id, type: String
+  field :twitter_hashtag, type: String
 
   def self.load
     config = self.first
