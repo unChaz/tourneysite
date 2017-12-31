@@ -12,12 +12,8 @@
       </countdown>
     </div>
     <div class="col-md-4 banner-col">
-      <twitch-chat ng-if="$ctrl.live" channel-name="$ctrl.twitchChannel">
+      <twitch-chat channel-name="$ctrl.twitchChannel">
       </twitch-chat>
-      <img class="vertical-banner"
-           ng-if="$ctrl.live === false"
-           ng-src="{{ $ctrl.verticalBanner }}">
-      </img>
     </div>
   </div>
 
