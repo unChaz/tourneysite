@@ -5,6 +5,7 @@
     <div class="col-md-8 stream-col">
       <twitch-stream channel-name="$ctrl.twitchChannel" ng-if="$ctrl.live"></twitch-stream>
       <countdown ng-if="$ctrl.live == false"
+                 start-time-string="$ctrl.startTimeString"
                  end-time="$ctrl.liveDate"
                  on-end="$ctrl.timesUp()">
       </countdown>

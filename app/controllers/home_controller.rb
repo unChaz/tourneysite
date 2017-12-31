@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
   def index
-    @title = server_config.site_title
+    @title = server_config[:site_title]
   end
 
   private

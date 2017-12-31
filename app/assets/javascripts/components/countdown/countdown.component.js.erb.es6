@@ -46,6 +46,7 @@
       templateUrl: '<%= asset_path "components/countdown/countdown.html" %>',
       controller: CountdownController,
       bindings: {
+        startTimeString: '<',
         endTime: '<',
         onEnd: '&'
       }
