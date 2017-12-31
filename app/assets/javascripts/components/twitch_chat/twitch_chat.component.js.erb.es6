@@ -7,7 +7,7 @@
     }
 
     $onInit() {
-      let src = `http://www.twitch.tv/embed/${this.channelName}/chat`;
+      let src = `https://www.twitch.tv/embed/${this.channelName}/chat`;
       this.source = this.$sce.trustAsResourceUrl(src);
     }
   }
