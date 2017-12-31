@@ -1,0 +1,27 @@
+.banner-col {
+  text-align: center;
+
+  @media(max-width: 1023px) {
+    display: none !important;
+  }
+}
+
+.stream-col {
+  @media(max-width: 1023px) {
+    width: 100% !important;
+  }
+}
+
+.vertical-banner {
+  max-width: 100%;
+}
+
+.content {
+  max-width: 1440px;
+  margin: auto;
+}
+
+.separator {
+  width: 100%;
+  height: 40px;
+}

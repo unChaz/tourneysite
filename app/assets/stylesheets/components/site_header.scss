@@ -1,0 +1,31 @@
+site-header {
+  display: block;
+  background-color: $bar-color;
+  border-bottom: 3px solid $subtle-grey;
+  height: 120px;
+  margin-bottom: 100px;
+  text-align: left;
+  padding-left: 50px;
+
+  .logo-container {
+    display: inline-block;
+    vertical-align: top;
+    border: 3px solid white;
+    border-top: none;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+
+    .logo-img {
+      width: 200px;
+      height: 200px;
+      border-bottom-left-radius: 12px;
+      border-bottom-right-radius: 12px;
+    }
+  }
+
+  .sponsor {
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+}
