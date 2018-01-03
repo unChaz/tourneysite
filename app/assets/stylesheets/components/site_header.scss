@@ -20,6 +20,7 @@ site-header {
     border-top: none;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
+    background-color: $bar-color;
 
     @media(max-width: 680px) {
       margin-top: 50px;
