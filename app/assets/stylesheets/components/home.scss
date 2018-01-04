@@ -48,4 +48,8 @@
 
 .chat-toggle {
   cursor: pointer;
+
+  @media(max-width: 1023px) {
+    display: none !important;
+  }
 }
