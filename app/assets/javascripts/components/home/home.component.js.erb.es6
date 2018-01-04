@@ -7,6 +7,7 @@
     }
 
     $onInit() {
+      this.showChat = false;
       this.logoImage = '<%= asset_path "ting-logo.png" %>';
       this.sponsorLink = 'https://ting.com/?lpn=rocketleague';
       this.sponsorImage = '<%= asset_path "ting-banner-3.png" %>';
@@ -23,6 +24,10 @@
 
     timesUp() {
       this.live = true;
+    }
+
+    toggleChat() {
+      this.showChat = !this.showChat;
     }
   }
 

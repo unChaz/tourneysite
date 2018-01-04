@@ -1,8 +1,19 @@
 <site-header logo-image="$ctrl.logoImage"></site-header>
 
 <div class="content">
+  <div class="content-row text-right">
+    <div class="col-md-12">
+      <a class="chat-toggle" ng-click="$ctrl.toggleChat()">
+        Toggle Chat
+      </a>
+    </div>
+  </div>
   <div clss="row content-row">
-    <div class="col-md-8 stream-col">
+    <div class="stream-col"
+         ng-class="{
+           'col-md-8': $ctrl.showChat,
+           'col-md-12': !$ctrl.showChat
+         }">
       <twitch-stream channel-name="$ctrl.twitchChannel" ng-if="$ctrl.live">
       </twitch-stream>
       <countdown ng-if="$ctrl.live === false"
@@ -11,7 +22,8 @@
                  on-end="$ctrl.timesUp()">
       </countdown>
     </div>
-    <div class="col-md-4 banner-col">
+    <div ng-show="$ctrl.showChat"
+         class="col-md-4 banner-col">
       <twitch-chat channel-name="$ctrl.twitchChannel">
       </twitch-chat>
     </div>
