@@ -7,8 +7,8 @@
     }
 
     $onInit() {
-      this.sponsorLink = 'https://rocketleague.ting.com';
-      this.sponsorImage = '<%= asset_path "ting-button.png" %>';
+      this.sponsorLink = 'https://ting.com/?lpn=rocketleague';
+      this.sponsorImage = '<%= asset_path "ting-button-2.png" %>';
     }
   }
 

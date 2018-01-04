@@ -8,6 +8,8 @@
 
     $onInit() {
       this.logoImage = '<%= asset_path "ting-logo.png" %>';
+      this.sponsorLink = 'https://ting.com/?lpn=rocketleague';
+      this.sponsorImage = '<%= asset_path "ting-banner-3.png" %>';
       this.verticalBanner = '<%= asset_path "vertical-banner.png" %>';
       let now = new Date();
       now.setHours(0,0,0,0);
