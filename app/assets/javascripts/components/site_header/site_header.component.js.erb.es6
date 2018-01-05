@@ -7,8 +7,9 @@
     }
 
     $onInit() {
-      this.sponsorLink = 'https://ting.com/?lpn=rocketleague';
+      this.sponsorLink = 'https://ting.com/?lpn=taketheshot';
       this.sponsorImage = '<%= asset_path "ting-button-2.png" %>';
+      this.discordIcon = '<%= asset_path "discord.png" %>';
     }
   }
 
