@@ -18,11 +18,13 @@
            'col-md-8': $ctrl.showChat,
            'col-md-12': !$ctrl.showChat
          }">
-      <twitch-stream channel-name="$ctrl.twitchChannel" ng-if="$ctrl.live">
+      <twitch-stream channel-name="$ctrl.twitchChannel" ng-if="$ctrl.showStream">
       </twitch-stream>
       <countdown ng-if="$ctrl.live === false"
+                 on-stream-show="$ctrl.enableShowStream()"
                  start-time-string="$ctrl.startTimeString"
                  end-time="$ctrl.liveDate"
+                 stream-time="$ctrl.streamDate"
                  on-end="$ctrl.timesUp()">
       </countdown>
     </div>

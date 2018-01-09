@@ -9,11 +9,13 @@
     $onInit() {
       let end = new Date(this.endTime);
       this.interval(end);
+      this.showVideo = true;
     }
 
     interval(end) {
       let now = new Date().getTime();
 
+      let streamTime = new Date(this.streamTime);
       let distance = end - now;
 
       let days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -27,6 +29,11 @@
         this.onEnd();
       }
 
+      if (streamTime - now < 0) {
+        this.showVideo = false;
+        this.onStreamShow();
+      }
+
       this.$timeout(() => {
         this.interval(end);
       }, 1000);
@@ -34,7 +41,6 @@
 
     setCountdownText(text) {
       this.countdownText = text;
-
     }
   }
 
@@ -47,8 +53,10 @@
       controller: CountdownController,
       bindings: {
         startTimeString: '<',
+        streamTime: '<',
         endTime: '<',
-        onEnd: '&'
+        onEnd: '&',
+        onStreamShow: '&'
       }
     });
 })();

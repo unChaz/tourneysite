@@ -20,10 +20,21 @@
         this.live = true;
       }
 
+      if (new Date(this.streamDate) > now) {
+        this.showStream = false;
+      } else {
+        this.showStream = true;
+      }
+
     }
 
     timesUp() {
       this.live = true;
+    }
+
+    enableShowStream() {
+      this.showStream = true;
+      console.log('show stream')
     }
 
     toggleChat() {
@@ -40,6 +51,7 @@
       controller: HomeCtrl,
       bindings: {
         liveDate: '<',
+        streamDate: '<',
         twitchChannel: '<',
         twitterWidgetId: '<',
         startTimeString: '<'
