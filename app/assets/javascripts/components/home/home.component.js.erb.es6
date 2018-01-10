@@ -34,7 +34,6 @@
 
     enableShowStream() {
       this.showStream = true;
-      console.log('show stream')
     }
 
     toggleChat() {
