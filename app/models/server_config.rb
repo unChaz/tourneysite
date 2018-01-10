@@ -2,8 +2,8 @@ class ServerConfig
   def self.load
     {
       site_title: 'Ting Open',
-      live_date: DateTime.new(2018,1,12,3).to_s,
-      stream_date: DateTime.new(2018,1,12,2,45).to_s,
+      live_date: DateTime.new(2018,1,11,18,0,0,'-7').to_s,
+      stream_date: DateTime.new(2018,1,11,17,45,0,'-7').to_s,
       twitter_widget_id: '947533030889082880',
       twitter_hashtag: 'TingOpen',
       twitch_channel: 'axeltoss',
