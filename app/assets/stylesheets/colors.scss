@@ -1,3 +1,4 @@
+// Basic Colors
 $blue: #00aaee;
 $green: #34d26b;
 $soft-blue: #d1f0fc;
@@ -12,16 +13,11 @@ $warning-yellow: #fff0cc;
 $white: #ffffff;
 $orange: #f50;
 
-.btn-orange,
-.btn-orange.dropdown-toggle,
-.open > .btn-orange.dropdown-toggle {
-  color: $white;
-  background-color: $orange;
-  border-color: darken($orange, 5%);
-
-  &:hover, &:focus, &:active, &.active {
-    color: $white;
-    background-color: darken($orange, 10%);
-    border-color: darken($orange, 15%);
-  }
-}
+// Theme
+$layout-background: #EAEAEA;
+$container-background: #EAEAEA;
+$off-color-section-bg: $layout-background;
+$off-color-section-font: white;
+$primary-font-color: #4A4A4A;
+$background-color: #8a0b0b;
+$bar-font: #fff;

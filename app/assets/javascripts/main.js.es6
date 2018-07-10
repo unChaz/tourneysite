@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('TourneySite', [])
+    .module('PrivateWiki', [])
     .controller('ApplicationCtrl', ApplicationCtrl);
 
   ApplicationCtrl.$inject = ['$scope', '$rootScope', '$location'];

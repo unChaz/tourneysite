@@ -1,9 +1,10 @@
-site-header {
+.site-header {
   display: block;
-  background-color: $bar-color;
+  background-color: $background-color;
+  color: white;
   border-bottom: 3px solid $subtle-grey;
-  height: 120px;
-  margin-bottom: 100px;
+  height: 80px;
+  margin-bottom: 30px;
   text-align: left;
 
   @media(max-width: 680px) {
@@ -12,70 +13,20 @@ site-header {
     padding-left: 0;
   }
 
-  .logo-container {
-    display: inline-block;
-    vertical-align: top;
-    border: 3px solid white;
-    border-top: none;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-    background-color: $bar-color;
-
-    .logo-img {
-      width: 200px;
-      height: 200px;
-      border-bottom-left-radius: 12px;
-      border-bottom-right-radius: 12px;
-    }
-  }
-
-  .social-links {
-    position: absolute;
-    top: 120px;
-    right: 320px;
-
-    @media(max-width: 800px) {
-      display: none;
-    }
-  }
-
-  .sponsor {
-    float: right;
-    margin-top: 10px;
-    margin-right: 10px;
-
-    @media(max-width: 680px) {
-      position: absolute;
-      top: 200px;
-      width: 100%;
-      text-align: center;
-    }
-
-    a {
-      img {
-        width: 400px;
-      }
-    }
-  }
-
   .banner-container {
     width: 100%;
-    height: 117px;
-    background-size: contain;
-    background-repeat: repeat-x;
+    height: 80px;
     padding-left: 50px;
-    background-image: url(asset_path("header-banner.jpg"));
+    padding-top: 10px;
+
+    h1 {
+      margin-top: 10px;
+    }
 
     @media(max-width: 680px) {
       padding-left: 0;
       background-size: cover;
     }
-  }
-
-  .ting-button {
-    border-radius: 16px;
-    border: 1px solid white;
-    width: 300px !important;
   }
 
   .fa {
@@ -114,25 +65,5 @@ site-header {
   .fa-twitter {
     background: #55ACEE;
     color: white;
-  }
-
-  .discord-link {
-    display: inline-block;
-    vertical-align: top;
-    padding: 12px;
-    background-color: #7288d9;
-    height: 50px;
-    width: 50px;
-    border-radius: 4px;
-    margin: 10px;
-  }
-  .discord-link:hover {
-    opacity: 0.7;
-  }
-
-  .discord-icon {
-    margin: -8px;
-    width: 40px;
-    height: 40px;
   }
 }

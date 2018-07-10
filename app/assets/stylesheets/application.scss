@@ -1,13 +1,10 @@
 @import "bootstrap-sass-official/assets/stylesheets/bootstrap";
 
-@import "colors";
-@import "themes/default";
-
-@import "layout";
 @import "fonts";
+@import "colors";
+@import "buttons";
+@import "layout";
 
 @import "components/home";
 @import "components/site_header";
-@import "components/twitch_stream";
-@import "components/twitter_feed";
 @import "components/info_cards";
