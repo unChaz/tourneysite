@@ -1,24 +1,19 @@
-# README
+# TourneySite
+A reusable eSports Tournament Marketing and Streaming site I built originally for the Ting Cup, a Rocket League tournament.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+![alt text](https://i.imgur.com/GFnAce5.png)
+![alt text](https://i.imgur.com/xZyONOS.png)
+![alt text](https://i.imgur.com/wzH9qnm.png)
 
-Things you may want to cover:
+## Getting Started
 
-* Ruby version
+### Requirements
+- Ruby ~2.3
+- Rails ~4.2
+- PostgreSQL
 
-* System dependencies
+## Commands
+- Install Dependencies: `bundle install` and `bower install`.
+- Database Setup: `rake db:create` and `rake db:migrate`.
+- Run the Server: `rails s`
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
